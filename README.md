@@ -1,4 +1,4 @@
-# mfee42-css-homework RWD響應式網站切版練習
+# RWD響應式網站切版練習
 ![image](https://github.com/RockyJade/mfee42-css-homework/assets/50537438/b2a19e51-0668-4ecf-9a6d-dde461bc3eec)
 
 作品網址：https://rockyjade.github.io/mfee42-css-homework/index
