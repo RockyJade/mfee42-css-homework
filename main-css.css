@@ -1,0 +1,531 @@
+/* 變數宣告 */
+:root {
+    --main-color: #055260;
+    --sub-color: #18B8C8;
+}
+
+/* 字體 */
+body * {
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 20px;
+    line-height: 175%;
+    font-weight: 500;
+}
+
+/* 拿掉標題間距 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+/* 模組化 */
+.btn {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* 清單無樣式 */
+.list-no-style {
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+}
+
+/* 著色字 */
+.font-colored {
+    color: var(--main-color);
+}
+
+/* 底線 */
+.font-underline {
+    border-bottom: 1px solid #055260;
+}
+
+/* 藍框白底 */
+.container {
+    max-width: 1020px;
+    margin: 0 auto;
+    background: #fff;
+    border: 2px solid var(--sub-color);
+    position: relative;
+    box-shadow: 0px 0px 4px #ccc;
+    border-radius: 40px;
+    margin-top: 110px;
+}
+
+/* 無框無底 */
+.container-b {
+    max-width: 1020px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* H2-icon */
+.h2-icon {
+    position: absolute;
+    padding: 30px;
+    background: #208597;
+    border-radius: 50%;
+    left: -41px;
+    top: -73px;
+    max-width: 120px;
+}
+
+/* 標題ICON */
+.h2-icon h2 {
+    font-size: 29px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+/* 字體RWD斷行 */
+.text-break {
+    display: inline-block;
+}
+
+
+
+/* 本體 */
+body {
+    background: url(img/bg.jpg);
+    color: #6A6A6A;
+
+}
+
+.main {
+    padding-inline: 25px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    background-color: var(--sub-color);
+    /* height: 285px; */
+    border-image-source: url(img/header_l.jpg);
+    border-image-slice: 0 0 9 0 fill;
+    border-image-width: 12px 0px;
+    border-image-repeat: repeat;
+    position: relative;
+    padding-block: 55px 29px;
+}
+
+.header .logo-top {
+    position: absolute;
+    width: 365px;
+    height: 52px;
+    left: 20px;
+    top: 14px;
+    background: url(img/logo_top.png);
+    background-size: contain
+}
+
+.header .logo-title {
+
+    height: 115px;
+    background: url(img/title.png) center center no-repeat;
+    background-size: contain
+}
+
+/* NAV */
+.nav {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    margin: 0;
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navbar a {
+    display: block;
+    padding: 8px 17px;
+    border-radius: 140px;
+    color: var(--main-color);
+}
+
+.navbar a:hover,
+.navbar a.current {
+    background: #FFF001;
+}
+
+.side-menu {
+    position: absolute;
+    right: 21px;
+    width: 50px;
+    top: 29px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+
+}
+
+.side-btn {
+    width: 50px;
+    height: 50px;
+    color: var(--main-color);
+    background: #055260;
+    border-radius: 50%;
+    right: 20px;
+    background-image: url(img/m_menu.png);
+    background-size: 50px auto;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.side-btn a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.menu-btn {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.home-btn {
+    background-position-y: -451px;
+}
+
+.fb-btn {
+    background-position-y: -351px;
+}
+
+/* 標題 */
+picture.title-p {
+    margin-top: 72px;
+    display: block;
+}
+
+picture.title-p img {
+    width: 100%;
+}
+
+.title .text {
+    margin-top: 13px;
+}
+
+.title .text h2 {
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    margin: 0;
+}
+
+.head-icon {
+    position: absolute;
+    width: 99px;
+    height: 68px;
+    left: 10%;
+    top: 168px;
+    background: url(img/hat.png);
+    background-size: contain;
+}
+
+/* even-time 活動時間 */
+.even-time .container {
+    padding: 30px 140px 30px 60px;
+    margin-top: 63px;
+}
+
+.even-time p {
+    font-size: 18px;
+}
+
+.even-time .girl1 {
+    position: absolute;
+    height: 469px;
+    right: 23px;
+    bottom: 40px;
+
+}
+
+/* 活動規則 */
+.rule .container {
+
+    padding: 30px 50px 5px 60px;
+}
+
+
+.rule .vote {
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+    max-width: 100%;
+}
+
+.rule .vote * {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.girl2 {
+    position: absolute;
+    width: 185px;
+    left: -65px;
+    bottom: 60px;
+}
+
+/* 活動獎項 */
+.reward .container {
+    padding: 30px 60px 240px;
+}
+
+/* 注意事項 */
+.notice .container {
+    padding: 50px 50px;
+}
+
+.notice .container li {
+    font-size: 18px;
+
+}
+
+.notice ul {
+    margin: 0;
+}
+
+.notice li+li {
+    margin-top: 18px;
+}
+
+.notice li span {
+    color: var(--main-color);
+    margin-right: 20px;
+}
+
+.notice p {
+    color: #208597;
+    margin: 28px 0 0 0;
+}
+
+/* footer */
+.my-footer {
+    padding-top: 35px;
+    background: #000;
+    margin-top: 60px;
+}
+
+.footer-main {
+    max-width: 1020px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.h4-icon {
+    padding: 15px;
+    background: #5E5E5E;
+    border-radius: 50%;
+    max-width: 70px;
+}
+
+.h4-icon:nth-of-type(2) {
+
+    margin-left: 20px;
+}
+
+.h4-icon h4 {
+    font-size: 20px;
+    line-height: 100%;
+    color: #FFFFFF;
+    align-items: center;
+    text-align: center;
+    font-weight: 300;
+}
+
+.my-footer ul {
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.my-footer li {
+    height: 70px;
+    margin-right: 10px;
+}
+
+.my-footer li img {
+    height: 100%;
+}
+
+.my-footer .copy-right {
+    padding-block: 15px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 100%;
+    border-top: 1px solid #5E5E5E;
+    margin-block: 30px 0px;
+}
+
+
+@media screen and (max-width:768px) {
+
+    /* RWD斷行 */
+    .text-break {
+        display: block;
+    }
+
+    /* RWD HEADER */
+    .header {
+        padding-block: 100px 60px;
+    }
+
+    /* RWD導覽列 */
+    .nav {
+        margin-top: 40px;
+        position: absolute;
+        display: block;
+        justify-content: center;
+        top: 25px;
+        height: 0px;
+        width: 100%;
+
+    }
+
+    .navbar {
+        margin: 0;
+        width: auto;
+        display: block;
+        transform: translateY(-150%);
+        overflow: hidden;
+        background-color: #1299a8;
+    }
+
+    .navbar a {
+        padding: 8px 17px;
+        border-radius: 0;
+        color: #6a6a6a;
+    }
+
+    .side-menu {
+        top: -60px;
+    }
+
+    .menu-btn {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .menu-btn a {
+        width: 100%;
+        height: 150%;
+        border-radius: 0px;
+    }
+
+    .nav:hover .navbar,
+    .navbar:hover .navbar {
+        transition: .4s;
+        transform: none;
+    }
+
+    .nav:hover .menu-btn,
+    .navbar:hover .menu-btn {
+        transition: 0s;
+        background-position-y: -50px;
+
+    }
+
+    .home-btn,
+    .fb-btn {
+        display: none;
+    }
+
+    /* RWD h2-icon */
+    .h2-icon {
+        left: 50%;
+        transform: translateX(-50%);
+        top: -60px;
+    }
+
+    /* 容器間距 */
+    .container *:nth-child(2) {
+        margin-top: 30px;
+    }
+    picture.title-p{
+        margin-top: 30px;
+    }
+    .even-time .container {
+        padding: 30px 60px;
+    }
+    /* RWD img */
+    .title .head-icon {
+        display: none;
+    }
+
+    .even-time .girl1 {
+        display: none;
+    }
+
+    .rule .girl2 {
+        display: none;
+
+    }
+
+    /* RWD FOOTER */
+    .my-footer {
+        padding-top: 0;
+    }
+
+    .footer-main {
+        max-width: none;
+        display: block;
+    }
+    .h4-icon:nth-of-type(2) {
+
+        margin-left: 0;
+    }
+    .h4-icon {
+        padding: 15px;
+        background: #2a2a2a;
+        max-width: none;
+        border-radius: 0;
+    }
+
+    .my-footer ul {
+        margin: 0px;
+    }
+
+    .my-footer li {
+        border-bottom: 1px solid #2a2a2a;
+        height: 120px;
+        width: 50%;
+        margin: 0;
+        padding-block: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .my-footer li:nth-child(n+1) {
+        border-right: 1px solid #2a2a2a;
+    }
+
+    .my-footer li img {
+        height: 100%;
+    }
+
+    .my-footer .copy-right {
+        margin: 0;
+    }
+}
